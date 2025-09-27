@@ -204,8 +204,7 @@
                 "127.0.0.0/8,no-resolve", 
                 "172.16.0.0/12,no-resolve", 
                 "192.168.0.0/16,no-resolve", 
-                "198.18.0.0/16,no-resolve", 
-                "224.0.0.0/4,no-resolve", 
+                "198.18.0.0/16,no-resolve",
                 "223.5.5.5/32,no-resolve", 
                 "223.6.6.6/32,no-resolve", 
                 "119.29.29.29/32,no-resolve", 
@@ -226,16 +225,7 @@
                 "114.114.114.119/32,no-resolve", 
                 "114.114.115.119/32,no-resolve", 
                 "114.114.114.110/32,no-resolve", 
-                "114.114.115.110/32,no-resolve", 
-                "1.2.4.8/32,no-resolve", 
-                "210.2.4.8/32,no-resolve", 
-                "10.0.0.0/8,no-resolve", 
-                "100.64.0.0/10,no-resolve", 
-                "127.0.0.0/8,no-resolve", 
-                "172.16.0.0/12,no-resolve", 
-                "192.168.0.0/16,no-resolve", 
-                "198.18.0.0/16,no-resolve", 
-                "224.0.0.0/4,no-resolve"
+                "114.114.115.110/32,no-resolve"
             ], 
             "process_name": [
                 "com.huawei.appmarket", 
