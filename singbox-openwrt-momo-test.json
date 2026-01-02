@@ -107,7 +107,7 @@
         "🇭🇰 香港",
         "🇯🇵 日本",
         "🇸🇬 新加坡",
-        "🇺🇲 美国",
+        "🇺🇲 美国"
         "🎯 全球直连"
       ]
     },
@@ -271,11 +271,11 @@
       },
       {
         "rule_set": "geosite-netflix",
-        "outbound": "🎥 流媒体解锁"
+        "outbound": "🎥 Netflix"
       },
       {
         "rule_set": "geoip-netflix",
-        "outbound": "🎥 流媒体解锁"
+        "outbound": "🎥 Netflix"
       },
       {
         "rule_set": "geosite-tiktok",
