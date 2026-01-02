@@ -341,10 +341,6 @@
         "outbound": "🎯 全球直连"
       },
       {
-        "rule_set": "gamedownloadcn",
-        "outbound": "🎯 全球直连"
-      },
-      {
         "rule_set": "coolapk",
         "outbound": "🎯 全球直连"
       },
@@ -517,13 +513,6 @@
         "download_detour": "🎯 全球直连"
       },
       {
-        "tag": "gamedownloadcn",
-        "type": "remote",
-        "format": "binary",
-        "url": "https://cdn.jsdelivr.net/gh/senshinya/singbox_ruleset@main/rule/Game/GameDownloadCN/GameDownloadCN.srs",
-        "download_detour": "🎯 全球直连"
-      },
-      {
         "tag": "coolapk",
         "type": "remote",
         "format": "binary",
@@ -534,7 +523,7 @@
         "tag": "apple",
         "type": "remote",
         "format": "binary",
-        "url": "https://cdn.jsdelivr.net/gh/senshinya/singbox_ruleset@main/rule/Apple/Apple_Classical.srs",
+        "url": "https://cdn.jsdelivr.net/gh/senshinya/singbox_ruleset@main/rule/Apple/Apple.srs",
         "download_detour": "🎯 全球直连"
       },
       {
