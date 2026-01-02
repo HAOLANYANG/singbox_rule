@@ -265,11 +265,11 @@
       },
       {
         "rule_set": "geosite-netflix",
-        "outbound": "🎥 Netflix"
+        "outbound": "🎥 流媒体解锁"
       },
       {
         "rule_set": "geoip-netflix",
-        "outbound": "🎥 Netflix"
+        "outbound": "🎥 流媒体解锁"
       },
       {
         "rule_set": "geosite-tiktok",
@@ -305,7 +305,7 @@
       },
       {
         "rule_set": "geosite-steam",
-        "outbound": "🎮 Steam"
+        "outbound": "🚀 节点选择"
       },
       {
         "rule_set": "geosite-!cn",
