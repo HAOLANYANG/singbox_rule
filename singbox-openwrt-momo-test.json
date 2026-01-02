@@ -4,8 +4,7 @@
       {
         "tag": "local",
         "type": "udp",
-        "server": "192.168.1.124",
-        "detour": "🎯 全球直连"
+        "server": "192.168.1.124"
       },
       {
         "tag": "foreign",
