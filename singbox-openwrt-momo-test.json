@@ -461,7 +461,7 @@
         "outbound": "🚀 节点选择"
       },
       {
-        "rule_set": "roblox",
+        "rule_set": "riot",
         "outbound": "🎮 游戏加速"
       },
       {
@@ -727,10 +727,10 @@
         "download_detour": "🎯 全球直连"
       },
       {
-        "tag": "roblox",
+        "tag": "riot",
         "type": "remote",
         "format": "binary",
-        "url": "https://cdn.jsdelivr.net/gh/senshinya/singbox_ruleset@main/rule/Game/Roblox/Roblox.srs",
+        "url": "https://cdn.jsdelivr.net/gh/senshinya/singbox_ruleset@main/rule/Riot/Riot.srs",
         "download_detour": "🎯 全球直连"
       }
     ],
