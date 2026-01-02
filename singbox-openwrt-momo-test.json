@@ -12,11 +12,6 @@
         "type": "https",
         "server": "8.8.4.4",
         "detour": "🚀 节点选择"
-      },
-      {
-        "tag": "block",
-        "type": "rcode",
-        "rcode": "refused"
       }
     ],
     "rules": [
@@ -50,7 +45,7 @@
       }
     ],
     "final": "foreign",
-    "strategy": "ipv4_prefer",
+    "strategy": "prefer_ipv4",
     "independent_cache": true,
     "reverse_mapping": true
   },
