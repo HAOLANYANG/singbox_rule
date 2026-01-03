@@ -7,11 +7,41 @@
         "server": "192.168.1.124"
       },
       {
-        "tag": "foreign",
+        "tag": "proxy",
         "type": "https",
         "server": "8.8.4.4",
         "detour": "🚀 节点选择"
-      }
+      },
+      {
+        "tag": "youtube",
+        "type": "https",
+        "server": "8.8.4.4",
+        "detour": "📹 油管视频"
+      },
+      {
+        "tag": "tw",
+        "type": "https",
+        "server": "8.8.4.4",
+        "detour": "📺 台湾流媒体"
+      },
+      {
+        "tag": "streaming",
+        "type": "https",
+        "server": "8.8.4.4",
+        "detour": "🎥 流媒体解锁"
+      },
+      {
+        "tag": "game",
+        "type": "https",
+        "server": "8.8.4.4",
+        "detour": "🎮 游戏加速"
+      },
+      {
+        "tag": "bilibili",
+        "type": "https",
+        "server": "223.6.6.6",
+        "detour": "📺 哔哩哔哩"
+      },
     ],
     "rules": [
       {
@@ -20,7 +50,7 @@
       },
       {
         "clash_mode": "global",
-        "server": "foreign"
+        "server": "proxy"
       },
       {
         "domain_suffix": [
@@ -28,7 +58,39 @@
           "googleapis.cn",
           "xn--ngstr-lra8j.com"
         ],
-        "server": "foreign"
+        "server": "proxy"
+      },
+      {
+        "rule_set": [
+		  "youtube",
+		  "youtubemusic"
+        ],
+        "server": "youtube"
+      },
+      {
+        "rule_set": [
+		  "bahamut",
+		  "kktv",
+		  "linetv"
+        ],
+        "server": "tw"
+      },
+      {
+        "rule_set": [
+		  "netflix",
+		  "disney",
+		  "hbo",
+		  "primevideo",
+		  "tiktok"
+        ],
+        "server": "streaming"
+      },
+      {
+        "rule_set": [
+		  "bilibiliintl",
+		  "bilibili"
+        ],
+        "server": "bilibili"
       },
       {
         "rule_set": [
@@ -45,7 +107,7 @@
         "server": "local"
       }
     ],
-    "final": "foreign",
+    "final": "proxy",
     "strategy": "prefer_ipv4",
     "independent_cache": true,
     "reverse_mapping": true
