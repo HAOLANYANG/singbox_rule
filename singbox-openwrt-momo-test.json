@@ -100,7 +100,7 @@
       {
         "rule_set": [
 		  "openai",
-		  "gemini"
+		  "gemeni"
         ],
         "server": "ai"
       },
