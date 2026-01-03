@@ -1,5 +1,4 @@
 {
-  "version": 2,
   "rules": [
     {
       "domain": [
@@ -176,9 +175,7 @@
         "douyincdn.com",
         "douyinpic.com",
         "idouyinvod.com"
-      ]
-    },
-    {
+      ],
       "ip_cidr": [
         "0.0.0.0/8",
         "10.0.0.0/8",
@@ -216,5 +213,6 @@
         "210.2.4.8/32"
       ]
     }
-  ]
+  ],
+  "version": 2
 }
