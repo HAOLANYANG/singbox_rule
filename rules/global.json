@@ -1,5 +1,4 @@
 {
-  "version": 2,
   "rules": [
     {
       "domain": [
@@ -24,20 +23,14 @@
         "ss.epdg.epc.mnc015.mcc234.pub.3gppnetwork.org",
         "ss.epdg.epc.geo.mnc015.mcc234.pub.3gppnetwork.org",
         "entsrv-uk.vodafone.com",
-        "vuk-gto.prod.ondemandconnectivity.com",
-        "nyadm.org",
-        "nyadm.net",
-        "nyavod.top",
-        "cnmdm.top",
-        "bgm.tv"
-      ]
-    },
-    {
+        "vuk-gto.prod.ondemandconnectivity.com"
+      ],
       "ip_cidr": [
         "88.82.0.0/19",
         "46.68.0.0/17",
         "87.194.0.0/16"
       ]
     }
-  ]
+  ],
+  "version": 2
 }
