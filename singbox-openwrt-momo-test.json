@@ -809,7 +809,7 @@
       "server": "local"
     }
   },
-  "inbounds": [
+"inbounds": [
     {
       "tag": "dns-in",
       "type": "direct",
@@ -839,17 +839,6 @@
       "type": "tproxy",
       "listen": "::",
       "listen_port": 7891
-    },
-    {
-      "tag": "tun-in",
-      "type": "tun",
-      "interface_name": "momo",
-      "address": [
-        "172.31.0.1/30",
-        "fdfe:dcba:9876::1/126"
-      ],
-      "auto_route": false,
-      "auto_redirect": false
     }
   ],
   "experimental": {
