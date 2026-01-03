@@ -141,7 +141,8 @@
         "🇯🇵 日本",
         "🇸🇬 新加坡",
 		"🇹🇼 台湾",
-        "🇺🇲 美国"
+        "🇺🇲 美国",
+		"{all}"
       ]
     },
     {
@@ -240,7 +241,7 @@
     },
     {
       "tag": "🇭🇰 香港",
-      "type": "selector",
+      "type": "urltest",
       "outbounds": [
         "{all}"
       ],
@@ -261,7 +262,7 @@
     },
     {
       "tag": "🇯🇵 日本",
-      "type": "selector",
+      "type": "urltest",
       "outbounds": [
         "{all}"
       ],
@@ -282,7 +283,7 @@
     },
     {
       "tag": "🇸🇬 新加坡",
-      "type": "selector",
+      "type": "urltest",
       "outbounds": [
         "{all}"
       ],
@@ -303,7 +304,7 @@
     },
     {
       "tag": "🇹🇼 台湾",
-      "type": "selector",
+      "type": "urltest",
       "outbounds": [
         "{all}"
       ],
@@ -324,7 +325,7 @@
     },
     {
       "tag": "🇺🇲 美国",
-      "type": "selector",
+      "type": "urltest",
       "outbounds": [
         "{all}"
       ],
