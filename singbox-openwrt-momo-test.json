@@ -571,14 +571,14 @@
       {
         "tag": "direct",
         "type": "remote",
-        "format": "binary",
+        "format": "source",
         "url": "https://cdn.jsdelivr.net/gh/HAOLANYANG/singbox_rule@main/rules/direct.json",
         "download_detour": "🎯 全球直连"
       },
       {
         "tag": "global",
         "type": "remote",
-        "format": "binary",
+        "format": "source",
         "url": "https://cdn.jsdelivr.net/gh/HAOLANYANG/singbox_rule@main/rules/global.json",
         "download_detour": "🎯 全球直连"
       },
