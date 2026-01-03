@@ -3,8 +3,8 @@
     "servers": [
       {
         "tag": "local",
-        "type": "udp",
-        "server": "192.168.1.124"
+        "type": "https",
+        "server": "223.5.5.5"
       },
       {
         "tag": "proxy",
@@ -114,6 +114,7 @@
       {
         "rule_set": [
           "lan",
+		  "direct",
 		  "steamcn",
 		  "coolapk",
 		  "apple",
@@ -415,6 +416,14 @@
         "outbound": "🎯 全球直连"
       },
       {
+        "rule_set": "global",
+        "outbound": "🚀 节点选择"
+      },
+      {
+        "rule_set": "direct",
+        "outbound": "🎯 全球直连"
+      },
+      {
         "rule_set": "ntp",
         "outbound": "🎯 全球直连"
       },
@@ -557,6 +566,20 @@
         "type": "remote",
         "format": "binary",
         "url": "https://cdn.jsdelivr.net/gh/senshinya/singbox_ruleset@main/rule/Lan/Lan.srs",
+        "download_detour": "🎯 全球直连"
+      },
+      {
+        "tag": "direct",
+        "type": "remote",
+        "format": "binary",
+        "url": "https://cdn.jsdelivr.net/gh/HAOLANYANG/singbox_rule@main/rules/direct.json",
+        "download_detour": "🎯 全球直连"
+      },
+      {
+        "tag": "global",
+        "type": "remote",
+        "format": "binary",
+        "url": "https://cdn.jsdelivr.net/gh/HAOLANYANG/singbox_rule@main/rules/global.json",
         "download_detour": "🎯 全球直连"
       },
       {
