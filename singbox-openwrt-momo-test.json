@@ -37,6 +37,12 @@
         "detour": "🎮 游戏加速"
       },
       {
+        "tag": "ai",
+        "type": "https",
+        "server": "8.8.4.4",
+        "detour": "💬 OpenAi"
+      },
+      {
         "tag": "bilibili",
         "type": "https",
         "server": "223.6.6.6",
@@ -84,6 +90,19 @@
 		  "tiktok"
         ],
         "server": "streaming"
+      },
+      {
+        "rule_set": [
+		  "riot"
+        ],
+        "server": "game"
+      },
+      {
+        "rule_set": [
+		  "openai",
+		  "gemini"
+        ],
+        "server": "ai"
       },
       {
         "rule_set": [
