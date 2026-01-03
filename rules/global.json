@@ -1,44 +1,41 @@
 {
-    "rules": [
-        {
-            "domain": [
-                "gulu.uk", 
-                "vgod.uk", 
-                "lain.bgm.tv", 
-                "play.nyadm.org", 
-                "wakigfl.cnmdm.top", 
-                "union.maccms.la", 
-                "union.dplayerstatic.com"
-            ], 
-            "domain_suffix": [
-                "iuuu.uk", 
-                "liyuans.com", 
-                "v2ex.com", 
-                "n.nnnolanark.xyz", 
-                "iproyal.com", 
-                "gspe1-ssl.ls.apple.com", 
-                "epdg.epc.mnc015.mcc234.pub.3gppnetwork.org", 
-                "ss.epdg.epc.mnc015.mcc234.pub.3gppnetwork.org", 
-                "ss.epdg.epc.geo.mnc015.mcc234.pub.3gppnetwork.org", 
-                "entsrv-uk.vodafone.com", 
-                "vuk-gto.prod.ondemandconnectivity.com", 
-                "nyadm.org", 
-                "nyadm.net", 
-                "nyavod.top", 
-                "cnmdm.top", 
-                "bgm.tv"
-            ], 
-            "ip_cidr": [
-                "88.82.0.0/19", 
-                "46.68.0.0/17", 
-                "87.194.0.0/16"
-            ], 
-            "process_name": [
-                "com.google.android.youtube",
-                "com.google.android.apps.youtube.music",
-                "com.hulu.plus"
-            ]
-        }
-    ], 
-    "version": 2
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "gulu.uk",
+        "vgod.uk",
+        "p2p-hkg1.discovery.steamserver.net",
+        "cmp2-hkg1.steamserver.net",
+        "lain.bgm.tv",
+        "play.nyadm.org",
+        "wakigfl.cnmdm.top",
+        "union.maccms.la",
+        "union.dplayerstatic.com"
+      ],
+      "domain_suffix": [
+        "iuuu.uk",
+        "liyuans.com",
+        "v2ex.com",
+        "n.nnnolanark.xyz",
+        "iproyal.com",
+        "gspe1-ssl.ls.apple.com",
+        "epdg.epc.mnc015.mcc234.pub.3gppnetwork.org",
+        "ss.epdg.epc.mnc015.mcc234.pub.3gppnetwork.org",
+        "ss.epdg.epc.geo.mnc015.mcc234.pub.3gppnetwork.org",
+        "entsrv-uk.vodafone.com",
+        "vuk-gto.prod.ondemandconnectivity.com",
+        "nyadm.org",
+        "nyadm.net",
+        "nyavod.top",
+        "cnmdm.top",
+        "bgm.tv"
+      ],
+      "ip_cidr": [
+        "88.82.0.0/19",
+        "46.68.0.0/17",
+        "87.194.0.0/16"
+      ]
+    }
+  ]
 }
