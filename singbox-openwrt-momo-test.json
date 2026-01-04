@@ -836,10 +836,10 @@
         "download_detour": "🎯 全球直连"
       }
     ],
-    "final": "🐠 漏网之鱼",
     "default_domain_resolver": {
       "server": "local"
-    }
+    },
+    "final": "🐠 漏网之鱼"
   },
 "inbounds": [
     {
