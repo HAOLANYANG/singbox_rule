@@ -1,5 +1,5 @@
 # singbox_rule
-目前的完整版有：test
+目前的完整版有：test  
 singbox-openwrt系列跟完整版的区别为：  
   dns-servers：local与bilibili的dns使用内网dns  
   dns-rules：不变  
