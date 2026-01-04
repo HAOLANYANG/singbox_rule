@@ -7,6 +7,12 @@
         "server": "223.5.5.5"
       },
       {
+        "tag": "bilibili",
+        "type": "https",
+        "server": "223.6.6.6",
+        "detour": "📺 哔哩哔哩"
+      },
+      {
         "tag": "proxy",
         "type": "https",
         "server": "8.8.4.4",
@@ -41,12 +47,6 @@
         "type": "https",
         "server": "8.8.4.4",
         "detour": "💬 OpenAi"
-      },
-      {
-        "tag": "bilibili",
-        "type": "https",
-        "server": "223.6.6.6",
-        "detour": "📺 哔哩哔哩"
       }
     ],
     "rules": [
