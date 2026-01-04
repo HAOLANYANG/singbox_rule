@@ -149,7 +149,7 @@
         {
           "action": "exclude",
           "keywords": [
-            "免费|官网|到期|流量"
+            "官网|到期时间|剩余|流量|套餐|免费|订阅|全球直连|GB|Expire Date|Traffic|ExpireDate"
           ]
         }
       ]
@@ -444,10 +444,6 @@
         "outbound": "🎯 全球直连"
       },
       {
-        "rule_set": "apple",
-        "outbound": "🎯 全球直连"
-      },
-      {
         "rule_set": "openai",
         "outbound": "💬 OpenAi"
       },
@@ -558,14 +554,6 @@
       {
         "rule_set": "riot",
         "outbound": "🎮 游戏加速"
-      },
-      {
-        "rule_set": "cnmax",
-        "outbound": "🎯 全球直连"
-      },
-      {
-        "rule_set": "cnip",
-        "outbound": "🎯 全球直连"
       }
     ],
     "rule_set": [
