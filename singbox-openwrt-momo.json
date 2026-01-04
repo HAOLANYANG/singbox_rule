@@ -3,12 +3,12 @@
     "servers": [
       {
         "tag": "local",
-        "type": "https",
+        "type": "udp",
         "server": "192.168.1.124"
       },
       {
         "tag": "bilibili",
-        "type": "https",
+        "type": "udp",
         "server": "192.168.1.124",
         "detour": "📺 哔哩哔哩"
       },
