@@ -11,7 +11,7 @@
         "type": "https",
         "server": "192.168.1.124",
         "detour": "📺 哔哩哔哩"
-      }
+      },
       {
         "tag": "proxy",
         "type": "https",
