@@ -128,7 +128,7 @@
       }
     ],
     "final": "proxy",
-    "strategy": "prefer_ipv4",
+    "strategy": "prefer_ipv6",
     "independent_cache": true,
     "reverse_mapping": true
   },
