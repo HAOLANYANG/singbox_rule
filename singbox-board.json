@@ -1,0 +1,899 @@
+{
+  "dns": {
+    "servers": [
+      {
+        "tag": "local",
+        "type": "https",
+        "server": "223.5.5.5"
+      },
+      {
+        "tag": "proxy",
+        "type": "https",
+        "server": "8.8.4.4",
+        "detour": "🚀 节点选择"
+      },
+      {
+        "tag": "youtube",
+        "type": "https",
+        "server": "8.8.4.4",
+        "detour": "📹 油管视频"
+      },
+      {
+        "tag": "tw",
+        "type": "https",
+        "server": "8.8.4.4",
+        "detour": "📺 台湾流媒体"
+      },
+      {
+        "tag": "streaming",
+        "type": "https",
+        "server": "8.8.4.4",
+        "detour": "🎥 流媒体解锁"
+      },
+      {
+        "tag": "game",
+        "type": "https",
+        "server": "8.8.4.4",
+        "detour": "🎮 游戏加速"
+      },
+      {
+        "tag": "ai",
+        "type": "https",
+        "server": "8.8.4.4",
+        "detour": "💬 OpenAi"
+      },
+      {
+        "tag": "bilibili",
+        "type": "https",
+        "server": "223.6.6.6",
+        "detour": "📺 哔哩哔哩"
+      }
+    ],
+    "rules": [
+      {
+        "clash_mode": "direct",
+        "server": "local"
+      },
+      {
+        "clash_mode": "global",
+        "server": "proxy"
+      },
+      {
+        "domain_suffix": [
+          "services.googleapis.cn",
+          "googleapis.cn",
+          "xn--ngstr-lra8j.com"
+        ],
+        "server": "proxy"
+      },
+      {
+        "rule_set": [
+		  "youtube",
+		  "youtubemusic"
+        ],
+        "server": "youtube"
+      },
+      {
+        "rule_set": [
+		  "bahamut",
+		  "kktv",
+		  "linetv"
+        ],
+        "server": "tw"
+      },
+      {
+        "rule_set": [
+		  "netflix",
+		  "disney",
+		  "hbo",
+		  "primevideo",
+		  "tiktok"
+        ],
+        "server": "streaming"
+      },
+      {
+        "rule_set": [
+		  "riot"
+        ],
+        "server": "game"
+      },
+      {
+        "rule_set": [
+		  "openai",
+		  "gemeni"
+        ],
+        "server": "ai"
+      },
+      {
+        "rule_set": [
+		  "bilibiliintl",
+		  "bilibili"
+        ],
+        "server": "bilibili"
+      },
+      {
+        "rule_set": [
+          "lan",
+		  "direct",
+		  "steamcn",
+		  "coolapk",
+		  "apple",
+		  "bilibiliintl",
+		  "bilibili",
+		  "ntp",
+		  "privatetracker",
+		  "cnmax"
+        ],
+        "server": "local"
+      }
+    ],
+    "final": "proxy",
+    "strategy": "prefer_ipv4",
+    "independent_cache": true,
+    "reverse_mapping": true
+  },
+  "outbounds": [
+    {
+      "tag": "🚀 节点选择",
+      "type": "selector",
+      "outbounds": [
+        "♻️ 自动选择",
+        "🇭🇰 香港",
+        "🇯🇵 日本",
+        "🇸🇬 新加坡",
+		"🇹🇼 台湾",
+        "🇺🇲 美国",
+		"{all}"
+      ]
+    },
+    {
+      "tag": "📹 油管视频",
+      "type": "selector",
+      "outbounds": [
+        "🚀 节点选择",
+        "🇭🇰 香港",
+        "🇯🇵 日本",
+        "🇸🇬 新加坡",
+		"🇹🇼 台湾",
+        "🇺🇲 美国"
+      ]
+    },
+    {
+      "tag": "🎥 流媒体解锁",
+      "type": "selector",
+      "outbounds": [
+        "🚀 节点选择",
+        "🇭🇰 香港",
+        "🇯🇵 日本",
+        "🇸🇬 新加坡",
+		"🇹🇼 台湾",
+        "🇺🇲 美国"
+      ]
+    },
+    {
+      "tag": "📺 台湾流媒体",
+      "type": "selector",
+      "outbounds": [
+        "🚀 节点选择",
+		"🇹🇼 台湾",
+        "🇭🇰 香港"
+      ]
+    },
+    {
+      "tag": "📺 哔哩哔哩",
+      "type": "selector",
+      "outbounds": [
+		"🎯 全球直连",
+        "🚀 节点选择",
+        "🇭🇰 香港",
+        "🇯🇵 日本",
+        "🇸🇬 新加坡",
+		"🇹🇼 台湾",
+        "🇺🇲 美国"
+      ]
+    },
+    {
+      "tag": "🎮 游戏加速",
+      "type": "selector",
+      "outbounds": [
+        "🚀 节点选择",
+        "🇭🇰 香港",
+        "🇯🇵 日本",
+        "🇸🇬 新加坡",
+		"🇹🇼 台湾",
+        "🇺🇲 美国"
+      ]
+    },
+    {
+      "tag": "💬 OpenAi",
+      "type": "selector",
+      "outbounds": [
+        "🚀 节点选择",
+        "🇭🇰 香港",
+        "🇯🇵 日本",
+        "🇸🇬 新加坡",
+		"🇹🇼 台湾",
+        "🇺🇲 美国"
+      ]
+    },
+    {
+      "tag": "💵 区块链",
+      "type": "selector",
+      "outbounds": [
+        "🚀 节点选择",
+        "🇭🇰 香港",
+        "🇯🇵 日本",
+        "🇸🇬 新加坡",
+		"🇹🇼 台湾",
+        "🇺🇲 美国"
+      ]
+    },
+    {
+      "tag": "🐠 漏网之鱼",
+      "type": "selector",
+      "outbounds": [
+        "🚀 节点选择",
+        "🇭🇰 香港",
+        "🇯🇵 日本",
+        "🇸🇬 新加坡",
+		"🇹🇼 台湾",
+        "🇺🇲 美国"
+      ]
+    },
+    {
+      "tag": "🇭🇰 香港",
+      "type": "urltest",
+      "outbounds": [
+        "{all}"
+      ],
+      "filter": [
+        {
+          "action": "include",
+          "keywords": [
+            "🇭🇰|HK|hk|香港|港|HongKong"
+          ]
+        },
+        {
+          "action": "exclude",
+          "keywords": [
+            "免费"
+          ]
+        }
+      ]
+    },
+    {
+      "tag": "🇯🇵 日本",
+      "type": "urltest",
+      "outbounds": [
+        "{all}"
+      ],
+      "filter": [
+        {
+          "action": "include",
+          "keywords": [
+            "🇯🇵|JP|jp|日本|日|Japan"
+          ]
+        },
+        {
+          "action": "exclude",
+          "keywords": [
+            "免费"
+          ]
+        }
+      ]
+    },
+    {
+      "tag": "🇸🇬 新加坡",
+      "type": "urltest",
+      "outbounds": [
+        "{all}"
+      ],
+      "filter": [
+        {
+          "action": "include",
+          "keywords": [
+            "新加坡|坡|狮城|SG|Singapore"
+          ]
+        },
+        {
+          "action": "exclude",
+          "keywords": [
+            "免费"
+          ]
+        }
+      ]
+    },
+    {
+      "tag": "🇹🇼 台湾",
+      "type": "urltest",
+      "outbounds": [
+        "{all}"
+      ],
+      "filter": [
+        {
+          "action": "include",
+          "keywords": [
+            "台|tai|tw|TW|Taiwan"
+          ]
+        },
+        {
+          "action": "exclude",
+          "keywords": [
+            "免费"
+          ]
+        }
+      ]
+    },
+    {
+      "tag": "🇺🇲 美国",
+      "type": "urltest",
+      "outbounds": [
+        "{all}"
+      ],
+      "filter": [
+        {
+          "action": "include",
+          "keywords": [
+            "🇺🇸|US|us|美国|美|United States"
+          ]
+        },
+        {
+          "action": "exclude",
+          "keywords": [
+            "AUS|RUS|免费"
+          ]
+        }
+      ]
+    },
+    {
+      "tag": "♻️ 自动选择",
+      "type": "urltest",
+      "outbounds": [
+        "{all}"
+      ],
+      "filter": [
+        {
+          "action": "exclude",
+          "keywords": [
+            "官网|到期时间|剩余|流量|套餐|免费|订阅|全球直连|GB|Expire Date|Traffic|ExpireDate"
+          ]
+        }
+      ],
+      "interval": "10m",
+      "tolerance": 100
+    },
+    {
+      "tag": "GLOBAL",
+      "type": "selector",
+      "outbounds": [
+        "🚀 节点选择",
+        "💬 OpenAi",
+        "📹 油管视频",
+        "🎥 流媒体解锁",
+        "🐠 漏网之鱼",
+        "🇭🇰 香港",
+        "🇯🇵 日本",
+        "🇸🇬 新加坡",
+        "🇺🇲 美国",
+        "♻️ 自动选择",
+        "🎯 全球直连"
+      ]
+    },
+    {
+      "tag": "🎯 全球直连",
+      "type": "direct"
+    }
+  ],
+  "route": {
+    "rules": [
+      {
+        "action": "sniff",
+        "sniffer": [
+          "http",
+          "tls",
+          "quic",
+          "dns"
+        ]
+      },
+      {
+        "inbound": "dns-in",
+        "action": "hijack-dns"
+      },
+      {
+        "ip_is_private": true,
+        "outbound": "🎯 全球直连"
+      },
+      {
+        "clash_mode": "direct",
+        "outbound": "🎯 全球直连"
+      },
+      {
+        "clash_mode": "global",
+        "outbound": "GLOBAL"
+      },
+      {
+        "rule_set": "lan",
+        "outbound": "🎯 全球直连"
+      },
+      {
+        "rule_set": "global",
+        "outbound": "🚀 节点选择"
+      },
+      {
+        "rule_set": "direct",
+        "outbound": "🎯 全球直连"
+      },
+      {
+        "rule_set": "ntp",
+        "outbound": "🎯 全球直连"
+      },
+      {
+        "rule_set": "steamcn",
+        "outbound": "🎯 全球直连"
+      },
+      {
+        "rule_set": "coolapk",
+        "outbound": "🎯 全球直连"
+      },
+      {
+        "rule_set": "apple",
+        "outbound": "🎯 全球直连"
+      },
+      {
+        "rule_set": "openai",
+        "outbound": "💬 OpenAi"
+      },
+      {
+        "rule_set": "gemeni",
+        "outbound": "💬 OpenAi"
+      },
+      {
+        "rule_set": "youtube",
+        "outbound": "📹 油管视频"
+      },
+      {
+        "rule_set": "youtubemusic",
+        "outbound": "📹 油管视频"
+      },
+      {
+        "rule_set": "netflix",
+        "outbound": "🎥 流媒体解锁"
+      },
+      {
+        "rule_set": "disney",
+        "outbound": "🎥 流媒体解锁"
+      },
+      {
+        "rule_set": "hbo",
+        "outbound": "🎥 流媒体解锁"
+      },
+      {
+        "rule_set": "primevideo",
+        "outbound": "🎥 流媒体解锁"
+      },
+      {
+        "rule_set": "tiktok",
+        "outbound": "🎥 流媒体解锁"
+      },
+      {
+        "rule_set": "bahamut",
+        "outbound": "📺 台湾流媒体"
+      },
+      {
+        "rule_set": "kktv",
+        "outbound": "📺 台湾流媒体"
+      },
+      {
+        "rule_set": "linetv",
+        "outbound": "📺 台湾流媒体"
+      },
+      {
+        "rule_set": "bilibiliintl",
+        "outbound": "📺 哔哩哔哩"
+      },
+      {
+        "rule_set": "bilibili",
+        "outbound": "📺 哔哩哔哩"
+      },
+      {
+        "rule_set": "fcm",
+        "outbound": "🚀 节点选择"
+      },
+      {
+        "rule_set": "telegram",
+        "outbound": "🚀 节点选择"
+      },
+      {
+        "rule_set": "line",
+        "outbound": "🚀 节点选择"
+      },
+      {
+        "rule_set": "whatsapp",
+        "outbound": "🚀 节点选择"
+      },
+      {
+        "rule_set": "github",
+        "outbound": "🚀 节点选择"
+      },
+      {
+        "rule_set": "speedtest",
+        "outbound": "🚀 节点选择"
+      },
+      {
+        "rule_set": "visa",
+        "outbound": "🚀 节点选择"
+      },
+      {
+        "rule_set": "google",
+        "outbound": "🚀 节点选择"
+      },
+      {
+        "rule_set": "microsoft",
+        "outbound": "🚀 节点选择"
+      },
+      {
+        "rule_set": "okx",
+        "outbound": "💵 区块链"
+      },
+      {
+        "rule_set": "binance",
+        "outbound": "💵 区块链"
+      },
+      {
+        "rule_set": "crypto",
+        "outbound": "💵 区块链"
+      },
+      {
+        "rule_set": "global-stun",
+        "outbound": "🚀 节点选择"
+      },
+      {
+        "rule_set": "riot",
+        "outbound": "🎮 游戏加速"
+      },
+      {
+        "rule_set": "cnmax",
+        "outbound": "🎯 全球直连"
+      },
+      {
+        "rule_set": "cnip",
+        "outbound": "🎯 全球直连"
+      }
+    ],
+    "rule_set": [
+      {
+        "tag": "lan",
+        "type": "remote",
+        "format": "binary",
+        "url": "https://cdn.jsdelivr.net/gh/senshinya/singbox_ruleset@main/rule/Lan/Lan.srs",
+        "download_detour": "🎯 全球直连"
+      },
+      {
+        "tag": "direct",
+        "type": "remote",
+        "format": "source",
+        "url": "https://cdn.jsdelivr.net/gh/HAOLANYANG/singbox_rule@main/rules/direct.json",
+        "download_detour": "🎯 全球直连"
+      },
+      {
+        "tag": "global",
+        "type": "remote",
+        "format": "source",
+        "url": "https://cdn.jsdelivr.net/gh/HAOLANYANG/singbox_rule@main/rules/global.json",
+        "download_detour": "🎯 全球直连"
+      },
+      {
+        "tag": "cnmax",
+        "type": "remote",
+        "format": "binary",
+        "url": "https://cdn.jsdelivr.net/gh/senshinya/singbox_ruleset@main/rule/ChinaMax/ChinaMax.srs",
+        "download_detour": "🎯 全球直连"
+      },
+      {
+        "tag": "cnip",
+        "type": "remote",
+        "format": "binary",
+        "url": "https://cdn.jsdelivr.net/gh/senshinya/singbox_ruleset@main/rule/ChinaIPs/ChinaIPs.srs",
+        "download_detour": "🎯 全球直连"
+      },
+      {
+        "tag": "global-stun",
+        "type": "remote",
+        "format": "binary",
+        "url": "https://cdn.jsdelivr.net/gh/senshinya/singbox_ruleset@main/rule/STUN/STUN.srs",
+        "download_detour": "🎯 全球直连"
+      },
+      {
+        "tag": "fcm",
+        "type": "remote",
+        "format": "binary",
+        "url": "https://cdn.jsdelivr.net/gh/senshinya/singbox_ruleset@main/rule/GoogleFCM/GoogleFCM.srs",
+        "download_detour": "🎯 全球直连"
+      },
+      {
+        "tag": "steamcn",
+        "type": "remote",
+        "format": "binary",
+        "url": "https://cdn.jsdelivr.net/gh/senshinya/singbox_ruleset@main/rule/SteamCN/SteamCN.srs",
+        "download_detour": "🎯 全球直连"
+      },
+      {
+        "tag": "coolapk",
+        "type": "remote",
+        "format": "binary",
+        "url": "https://cdn.jsdelivr.net/gh/senshinya/singbox_ruleset@main/rule/Coolapk/Coolapk.srs",
+        "download_detour": "🎯 全球直连"
+      },
+      {
+        "tag": "apple",
+        "type": "remote",
+        "format": "binary",
+        "url": "https://cdn.jsdelivr.net/gh/senshinya/singbox_ruleset@main/rule/Apple/Apple.srs",
+        "download_detour": "🎯 全球直连"
+      },
+      {
+        "tag": "ntp",
+        "type": "remote",
+        "format": "binary",
+        "url": "https://cdn.jsdelivr.net/gh/senshinya/singbox_ruleset@main/rule/NTPService/NTPService.srs",
+        "download_detour": "🎯 全球直连"
+      },
+      {
+        "tag": "privatetracker",
+        "type": "remote",
+        "format": "binary",
+        "url": "https://cdn.jsdelivr.net/gh/senshinya/singbox_ruleset@main/rule/PrivateTracker/PrivateTracker.srs",
+        "download_detour": "🎯 全球直连"
+      },
+      {
+        "tag": "bilibili",
+        "type": "remote",
+        "format": "binary",
+        "url": "https://cdn.jsdelivr.net/gh/senshinya/singbox_ruleset@main/rule/BiliBili/BiliBili.srs",
+        "download_detour": "🎯 全球直连"
+      },
+      {
+        "tag": "bilibiliintl",
+        "type": "remote",
+        "format": "binary",
+        "url": "https://cdn.jsdelivr.net/gh/senshinya/singbox_ruleset@main/rule/BiliBiliIntl/BiliBiliIntl.srs",
+        "download_detour": "🎯 全球直连"
+      },
+      {
+        "tag": "youtube",
+        "type": "remote",
+        "format": "binary",
+        "url": "https://cdn.jsdelivr.net/gh/senshinya/singbox_ruleset@main/rule/YouTube/YouTube.srs",
+        "download_detour": "🎯 全球直连"
+      },
+      {
+        "tag": "youtubemusic",
+        "type": "remote",
+        "format": "binary",
+        "url": "https://cdn.jsdelivr.net/gh/senshinya/singbox_ruleset@main/rule/YouTubeMusic/YouTubeMusic.srs",
+        "download_detour": "🎯 全球直连"
+      },
+      {
+        "tag": "google",
+        "type": "remote",
+        "format": "binary",
+        "url": "https://cdn.jsdelivr.net/gh/senshinya/singbox_ruleset@main/rule/Google/Google.srs",
+        "download_detour": "🎯 全球直连"
+      },
+      {
+        "tag": "microsoft",
+        "type": "remote",
+        "format": "binary",
+        "url": "https://cdn.jsdelivr.net/gh/senshinya/singbox_ruleset@main/rule/Microsoft/Microsoft.srs",
+        "download_detour": "🎯 全球直连"
+      },
+      {
+        "tag": "netflix",
+        "type": "remote",
+        "format": "binary",
+        "url": "https://cdn.jsdelivr.net/gh/senshinya/singbox_ruleset@main/rule/Netflix/Netflix.srs",
+        "download_detour": "🎯 全球直连"
+      },
+      {
+        "tag": "disney",
+        "type": "remote",
+        "format": "binary",
+        "url": "https://cdn.jsdelivr.net/gh/senshinya/singbox_ruleset@main/rule/Disney/Disney.srs",
+        "download_detour": "🎯 全球直连"
+      },
+      {
+        "tag": "hbo",
+        "type": "remote",
+        "format": "binary",
+        "url": "https://cdn.jsdelivr.net/gh/senshinya/singbox_ruleset@main/rule/HBO/HBO.srs",
+        "download_detour": "🎯 全球直连"
+      },
+      {
+        "tag": "primevideo",
+        "type": "remote",
+        "format": "binary",
+        "url": "https://cdn.jsdelivr.net/gh/senshinya/singbox_ruleset@main/rule/PrimeVideo/PrimeVideo.srs",
+        "download_detour": "🎯 全球直连"
+      },
+      {
+        "tag": "bahamut",
+        "type": "remote",
+        "format": "binary",
+        "url": "https://cdn.jsdelivr.net/gh/senshinya/singbox_ruleset@main/rule/Bahamut/Bahamut.srs",
+        "download_detour": "🎯 全球直连"
+      },
+      {
+        "tag": "kktv",
+        "type": "remote",
+        "format": "binary",
+        "url": "https://cdn.jsdelivr.net/gh/senshinya/singbox_ruleset@main/rule/KKTV/KKTV.srs",
+        "download_detour": "🎯 全球直连"
+      },
+      {
+        "tag": "linetv",
+        "type": "remote",
+        "format": "binary",
+        "url": "https://cdn.jsdelivr.net/gh/senshinya/singbox_ruleset@main/rule/LineTV/LineTV.srs",
+        "download_detour": "🎯 全球直连"
+      },
+      {
+        "tag": "openai",
+        "type": "remote",
+        "format": "binary",
+        "url": "https://cdn.jsdelivr.net/gh/senshinya/singbox_ruleset@main/rule/OpenAI/OpenAI.srs",
+        "download_detour": "🎯 全球直连"
+      },
+      {
+        "tag": "gemeni",
+        "type": "remote",
+        "format": "binary",
+        "url": "https://cdn.jsdelivr.net/gh/senshinya/singbox_ruleset@main/rule/Gemini/Gemini.srs",
+        "download_detour": "🎯 全球直连"
+      },
+      {
+        "tag": "telegram",
+        "type": "remote",
+        "format": "binary",
+        "url": "https://cdn.jsdelivr.net/gh/senshinya/singbox_ruleset@main/rule/Telegram/Telegram.srs",
+        "download_detour": "🎯 全球直连"
+      },
+      {
+        "tag": "line",
+        "type": "remote",
+        "format": "binary",
+        "url": "https://cdn.jsdelivr.net/gh/senshinya/singbox_ruleset@main/rule/Line/Line.srs",
+        "download_detour": "🎯 全球直连"
+      },
+      {
+        "tag": "whatsapp",
+        "type": "remote",
+        "format": "binary",
+        "url": "https://cdn.jsdelivr.net/gh/senshinya/singbox_ruleset@main/rule/Whatsapp/Whatsapp.srs",
+        "download_detour": "🎯 全球直连"
+      },
+      {
+        "tag": "tiktok",
+        "type": "remote",
+        "format": "binary",
+        "url": "https://cdn.jsdelivr.net/gh/senshinya/singbox_ruleset@main/rule/TikTok/TikTok.srs",
+        "download_detour": "🎯 全球直连"
+      },
+      {
+        "tag": "github",
+        "type": "remote",
+        "format": "binary",
+        "url": "https://cdn.jsdelivr.net/gh/senshinya/singbox_ruleset@main/rule/GitHub/GitHub.srs",
+        "download_detour": "🎯 全球直连"
+      },
+      {
+        "tag": "speedtest",
+        "type": "remote",
+        "format": "binary",
+        "url": "https://cdn.jsdelivr.net/gh/senshinya/singbox_ruleset@main/rule/Speedtest/Speedtest.srs",
+        "download_detour": "🎯 全球直连"
+      },
+      {
+        "tag": "visa",
+        "type": "remote",
+        "format": "binary",
+        "url": "https://cdn.jsdelivr.net/gh/senshinya/singbox_ruleset@main/rule/VISA/VISA.srs",
+        "download_detour": "🎯 全球直连"
+      },
+      {
+        "tag": "okx",
+        "type": "remote",
+        "format": "binary",
+        "url": "https://cdn.jsdelivr.net/gh/senshinya/singbox_ruleset@main/rule/OKX/OKX.srs",
+        "download_detour": "🎯 全球直连"
+      },
+      {
+        "tag": "binance",
+        "type": "remote",
+        "format": "binary",
+        "url": "https://cdn.jsdelivr.net/gh/senshinya/singbox_ruleset@main/rule/Binance/Binance.srs",
+        "download_detour": "🎯 全球直连"
+      },
+      {
+        "tag": "crypto",
+        "type": "remote",
+        "format": "binary",
+        "url": "https://cdn.jsdelivr.net/gh/senshinya/singbox_ruleset@main/rule/Crypto/Crypto.srs",
+        "download_detour": "🎯 全球直连"
+      },
+      {
+        "tag": "riot",
+        "type": "remote",
+        "format": "binary",
+        "url": "https://cdn.jsdelivr.net/gh/senshinya/singbox_ruleset@main/rule/Riot/Riot.srs",
+        "download_detour": "🎯 全球直连"
+      }
+    ],
+    "final": "🐠 漏网之鱼",
+    "default_domain_resolver": {
+      "server": "local"
+    }
+  },
+"inbounds": [
+    {
+      "tag": "dns-in",
+      "type": "direct",
+      "listen": "::",
+      "listen_port": 1053
+    },
+    {
+      "tag": "http-in",
+      "type": "http",
+      "listen": "::",
+      "listen_port": 8080
+    },
+    {
+      "tag": "socks-in",
+      "type": "socks",
+      "listen": "::",
+      "listen_port": 1080
+    },
+    {
+      "tag": "redirect-in",
+      "type": "redirect",
+      "listen": "::",
+      "listen_port": 7890
+    },
+    {
+      "tag": "tproxy-in",
+      "type": "tproxy",
+      "listen": "::",
+      "listen_port": 7891
+    },
+    {
+      "tag": "tun-in",
+      "type": "tun",
+      "interface_name": "momo",
+      "address": [
+        "172.31.0.1/30",
+        "fdfe:dcba:9876::1/126"
+      ],
+      "auto_route": false,
+      "auto_redirect": false
+    }
+  ],
+  "experimental": {
+    "cache_file": {
+      "enabled": true,
+      "path": "/etc/momo/run/cache.db",
+      "store_fakeip": false
+    },
+    "clash_api": {
+      "external_controller": "0.0.0.0:9095",
+      "external_ui": "/etc/momo/run/ui",
+      "external_ui_download_url": "https://gh-proxy.com/https://github.com/Zephyruso/zashboard/archive/refs/heads/gh-pages.zip",
+      "external_ui_download_detour": "🎯 全球直连",
+      "secret": "",
+      "default_mode": "rule"
+    }
+  },
+  "log": {
+    "disabled": false,
+    "level": "info",
+    "timestamp": true
+  }
+}
