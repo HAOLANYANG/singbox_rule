@@ -62,6 +62,7 @@
         "domain_suffix": [
           "services.googleapis.cn",
           "googleapis.cn",
+          "googleapis.com",
           "xn--ngstr-lra8j.com"
         ],
         "server": "proxy"
