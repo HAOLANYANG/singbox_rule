@@ -100,6 +100,13 @@
       },
       {
         "rule_set": [
+		  "google",
+		  "fcm"
+        ],
+        "server": "proxy"
+      },
+      {
+        "rule_set": [
           "lan",
 		  "direct",
 		  "steamcn",
