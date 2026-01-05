@@ -7,12 +7,6 @@
         "server": "192.168.1.124"
       },
       {
-        "tag": "bilibili",
-        "type": "udp",
-        "server": "192.168.1.124",
-        "detour": "📺 哔哩哔哩"
-      },
-      {
         "tag": "proxy",
         "type": "https",
         "server": "8.8.4.4",
@@ -103,13 +97,6 @@
 		  "gemeni"
         ],
         "server": "ai"
-      },
-      {
-        "rule_set": [
-		  "bilibiliintl",
-		  "bilibili"
-        ],
-        "server": "bilibili"
       },
       {
         "rule_set": [
@@ -490,14 +477,6 @@
       {
         "rule_set": "linetv",
         "outbound": "📺 台湾流媒体"
-      },
-      {
-        "rule_set": "bilibiliintl",
-        "outbound": "📺 哔哩哔哩"
-      },
-      {
-        "rule_set": "bilibili",
-        "outbound": "📺 哔哩哔哩"
       },
       {
         "rule_set": "fcm",
